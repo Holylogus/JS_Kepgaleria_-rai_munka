@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: blue;
+}
+main{
+    max-width: 800px;
+    margin: auto;
+    background-color: yellow;
+}
+section{
+    
+    display: grid;
+    grid-template-columns: 50px, 1fr, 50px;
+}
+section div img{
+    width: 100%;
+    background-size: cover;
+}
+.bal{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 5px;
+}
+.jobb{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.galery img{
+    width: 100%;
+    height: 150px;
+}
+article{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    padding: 2em;
+    margin: auto;
+}
